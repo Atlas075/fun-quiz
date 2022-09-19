@@ -1,0 +1,77 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+width: 800px;
+max-width: 80%;
+/* height: 800px;
+max-height: 80%; */
+background-color: white;
+border: 3px, solid, black;
+border-radius: 5px;
+padding: 10px;
+box-shadow: 0 0 10px  2px;
+font-size: 2rem;
+padding: 10px 20px;
+}
+
+#menu-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+
+.start-btn, .next-btn, .high-btn {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+
+#score-card, #time-card {
+    display: flex;
+
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* padding-top: 350px; */
+}
+
+#right-wrong {
+    justify-content: space-evenly;
+    display: flex;
+    color: grey;
+    
+}
+
+.hide {
+display: none;
+}
