@@ -7,52 +7,40 @@
     <title>Fun-Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script defer src="/fun-quiz/assets/js/script.js"></script>
+
+</head>
+
 <body>
-    
-    <section class="container">
-
-        <div class="container-sec" id="top-container">
-
-            <div id="score-section">
-                <h3 id="">Score:</h3>
-                <h3 id="score-points"></h3>
+    <div class="container">
+        <div id="menu-container" class="hide">
+            <div id="score-card">
+                <!-- <p id="score">Score:</p> -->
+                <p id="score-points">0</p>
             </div>
-
-            <div id="time-section">
-                <h3>Time:</h3>
-                <h3 id="time-points"></h3>
-
-            </div>
-
-        </div>
-
-
-        <div class="container-sec" id="question-container">
-
-            <div id="question">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quo eligendi tempora asperiores eius nemo, reiciendis</div>
-            <span></span>
-            <div id="answer-choice">
-                <button id="btn-a" class="btn">A:</button>
-                <br>
-                <button id="btn-b" class="btn">B:</button>
-                <br>
-                <button id="btn-c" class="btn">C:</button>
-                <br>
-                <button id="btn-d" class="btn">D:</button>
-                <br>
+            <div id="time-card">
+                <!-- <p id="time">Time</p> -->
+                <p id="time-points" class="hide">1:30</p>
             </div>
         </div>
-
-
-        <div class="container-sec" id="nav-container">
-            <button class="nav-btn" id="submit-btn">Submit</button>
-            <button class="nav-btn" id="skip-btn">Skip</button>
+        <div id="question-container" class="hide">
+         <div id="question">Question</div>
+         <div id="answer-btn" class="btn-grid">
+            <button class="btn"> A:</button>
+            <button class="btn"> B:</button>
+            <button class="btn"> C:</button>
+            <button class="btn"> D:</button>
+         </div>
 
         </div>
-
-
-    </section>
-
+        <div id="" class="controls">
+            <button id="start-btn" class="start-btn">Play</button>
+            <button id="next-btn" class="next-btn hide">Next</button>
+            <button id="high-btn" class="high-btn hide">View Scores</button>
+        </div>
+        <div id="right-wrong" >
+            <p class="hide">Correct</p> <p class="hide">Incorrect</p>
+        </div>
+    </div>
 
 </body>
 </html>
